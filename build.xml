@@ -9,14 +9,14 @@
   <target name="skeletons">
     <zip destfile="skeletons.zip"
          basedir="."
-         includes="skeletons/pom.xml skeletons/*/pom.xml skeletons/*/src/**">
+         includes="skeletons/pom.xml skeletons/**/pom.xml skeletons/**/src/**">
     </zip>
   </target>
   
   <target name="solutions">
     <zip destfile="solutions.zip"
          basedir="."
-         includes="solutions/pom.xml solutions/*/pom.xml solutions/*/src/**">
+         includes="solutions/pom.xml solutions/**/pom.xml solutions/**/src/**">
     </zip>
   </target>
 
