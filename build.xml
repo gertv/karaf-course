@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<project default="all">
+
+  <target name="clean">
+    <delete file="skeletons.zip"/>
+    <delete file="solutions.zip"/>
+  </target>
+
+  <target name="skeletons">
+    <zip destfile="skeletons.zip"
+         basedir="."
+         includes="skeletons/pom.xml skeletons/*/pom.xml skeletons/*/src/**">
+    </zip>
+  </target>
+  
+  <target name="solutions">
+    <zip destfile="solutions.zip"
+         basedir="."
+         includes="solutions/pom.xml solutions/*/pom.xml solutions/*/src/**">
+    </zip>
+  </target>
+
+  <target name="all" depends="clean,skeletons,solutions"
+          description="Build skeletons and solutions zip files"/>
+  
+</project>
