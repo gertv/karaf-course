@@ -22,30 +22,24 @@
 
   <parent>
     <groupId>be.anova.course.karaf</groupId>
-    <artifactId>parent</artifactId>
+    <artifactId>be.anova.course.karaf.blueprint</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>be.anova.course.karaf</groupId>
-  <artifactId>be.anova.course.karaf.blueprint</artifactId>
+  <groupId>be.anova.course.karaf.blueprint</groupId>
+  <artifactId>be.anova.course.karaf.blueprint.restaurant</artifactId>
 
-  <name>Karaf :: Blueprint</name>
-  <packaging>pom</packaging>
+  <name>Karaf :: Blueprint :: Restaurant</name>
+  <packaging>bundle</packaging>
+  <version>1.0-SNAPSHOT</version>
 
-  <modules>
-    <module>restaurant</module>
-    <module>kitchen</module>
-    <module>staff</module>
-  </modules>
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>be.anova.course.karaf.blueprint</groupId>
-        <artifactId>be.anova.course.karaf.blueprint.restaurant</artifactId>
-        <version>${pom.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.1</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
 
 </project>
