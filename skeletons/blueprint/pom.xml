@@ -43,7 +43,7 @@
       <dependency>
         <groupId>be.anova.course.karaf.blueprint</groupId>
         <artifactId>be.anova.course.karaf.blueprint.restaurant</artifactId>
-        <version>${pom.version}</version>
+        <version>${project.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
