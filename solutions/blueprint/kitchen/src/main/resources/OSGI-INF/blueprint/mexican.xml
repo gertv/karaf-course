@@ -19,15 +19,15 @@
 
   <service interface="be.anova.course.karaf.blueprint.Kitchen">
     <bean class="be.anova.course.karaf.blueprint.kitchen.Mexican">
-      <property name="chef" ref="chef" />
+      <property name="chef" ref="chefPancho" />
     </bean>
   </service>
 
-  <bean id="chef" class="be.anova.course.karaf.blueprint.People" factory-method="createPerson">
+  <bean id="chefPancho" class="be.anova.course.karaf.blueprint.People" factory-method="createPerson">
     <argument value="Pancho" />
     <argument value="Perez" />
   </bean>
 
-  <service interface="be.anova.course.karaf.blueprint.Person" ref="chef" />
+  <service interface="be.anova.course.karaf.blueprint.Person" ref="chefPancho" />
 
 </blueprint>
